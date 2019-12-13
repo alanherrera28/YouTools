@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorBackground"
+    android:padding="10dp"
+    tools:context=".Propinas"
+    android:orientation="vertical">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Calculadora de Propinas"
+        android:textColor="@color/colorTextHint"
+        android:textSize="12pt"
+        android:gravity="center"/>
+
+    <EditText
+        android:id="@+id/etxCuenta"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:hint="Cuenta: $"
+        android:textSize="9pt"
+        android:inputType="numberDecimal"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:text="Selecciona el % de propina"
+        android:textColor="@color/colorText"
+        android:textSize="11pt"
+        android:gravity="center"/>
+    <RadioGroup
+        android:id="@+id/rgpOp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <RadioButton
+            android:id="@+id/rdb15"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Propina 15%"
+            android:textSize="9pt"
+            android:textColor="@color/colorText"
+            android:buttonTint="@color/colorTextHint"/>
+        <RadioButton
+            android:id="@+id/rdb20"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Propina 20%"
+            android:textSize="9pt"
+            android:textColor="@color/colorText"
+            android:buttonTint="@color/colorTextHint"/>
+        <RadioButton
+            android:id="@+id/rdb25"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Propina 25%"
+            android:textSize="9pt"
+            android:textColor="@color/colorText"
+            android:buttonTint="@color/colorTextHint"/>
+    </RadioGroup>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:text="Total de personas(Opcional)"
+        android:textColor="@color/colorText"
+        android:textSize="10pt"
+        android:gravity="center"/>
+    <RadioGroup
+        android:id="@+id/rgpOp2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <RadioButton
+            android:id="@+id/rdbOpSi"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Dividir cuenta"
+            android:textSize="9pt"
+            android:textColor="@color/colorText"
+            android:buttonTint="@color/colorTextHint"/>
+        <RadioButton
+            android:id="@+id/rdbOpNo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="No Dividir cuenta"
+            android:textSize="9pt"
+            android:textColor="@color/colorText"
+            android:buttonTint="@color/colorTextHint"/>
+    </RadioGroup>
+    <EditText
+        android:id="@+id/etxPersonas"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:hint="Núm Personas"
+        android:textSize="9pt"
+        android:inputType="number"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="11pt"
+        android:layout_marginTop="10dp"
+        android:hint="Resultado"
+        android:textColor="@color/colorTextHint"
+        android:id="@+id/txvResultado"
+        android:gravity="center"/>
+    <Button
+        android:id="@+id/btnCalcular"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Calcular"
+        android:textSize="9pt"
+        android:background="@color/colorTextHint"
+        android:textColor="@color/colorText2"
+        android:layout_marginEnd="5dp"/>
+
+</LinearLayout>

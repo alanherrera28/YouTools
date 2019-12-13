@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".AcercaActivity"
+    android:background="#82B1FF">
+
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:id="@+id/cinta"
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:background="#FFD740"
+        android:gravity="center">
+
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:src="@drawable/logo_cinta"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.484"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+    </androidx.appcompat.widget.LinearLayoutCompat>
+
+    <TextView
+        android:id="@+id/titulo"
+        android:layout_width="381dp"
+        android:layout_height="47dp"
+        android:layout_below="@+id/cinta"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="15dp"
+        android:text="Acerca de..."
+        android:textColor="@color/colorText2"
+        android:textSize="30dp" />
+
+    <TextView
+        android:id="@+id/parrafo1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/titulo"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="15dp"
+        android:layout_marginEnd="15dp"
+        android:layout_marginTop="20dp"
+        android:text="El objetivo de esta aplicacion es el de dar acceso a herramientas utiles como lo es una calculadora de propinas y demas"
+        android:textColor="@color/colorText2"
+        android:textSize="20dp" />
+
+    <TextView
+        android:id="@+id/titulo2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/parrafo1"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="252dp"
+        android:text="Creado por:"
+        android:textColor="@color/colorText2"
+        android:textSize="20dp" />
+
+    <TextView
+        android:id="@+id/parrafo2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/titulo2"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="15dp"
+        android:layout_marginEnd="15dp"
+        android:layout_marginTop="20dp"
+        android:text="° Alan Eduardo Herrera Alvarado.\n° Juan Daniel Aguilar Cano."
+        android:textColor="@color/colorText2"
+        android:textSize="20dp" />
+
+    <TextView
+        android:id="@+id/titulo3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/parrafo2"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="115dp"
+        android:layout_marginTop="26dp"
+        android:layout_marginEnd="85dp"
+        android:text="   ¡¡¡ G R A C I A S !!!"
+        android:textColor="@color/colorText2"
+        android:textSize="20dp" />
+
+
+</RelativeLayout>
